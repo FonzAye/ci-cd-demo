@@ -6,11 +6,11 @@ pipeline {
     }
 
     stages {
-        // stage('Clone Repository') {
-        //     steps {
-        //         git branch: '', url: 'https://github.com/FonzAye/ci-cd-demo'
-        //     }
-        // }
+        stage('Clone Repository') {
+            steps {
+                git url: 'https://github.com/FonzAye/ci-cd-demo.git'
+            }
+        }
 
         stage('Build Docker Image') {
             steps {
