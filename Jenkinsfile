@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git url: 'https://github.com/FonzAye/ci-cd-demo'
+                git branch: '', url: 'https://github.com/FonzAye/ci-cd-demo'
             }
         }
 
